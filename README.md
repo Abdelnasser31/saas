@@ -1,9 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is to create a boilerplate for a saas application with multitenancy and subscriptions.
 
-Things you may want to cover:
+
+Run the application locally:
 
 * Clone the project to your local machine
 
@@ -16,4 +16,3 @@ Things you may want to cover:
 * Database creation: rails db:create
 
 * Start the server: rails s
-
