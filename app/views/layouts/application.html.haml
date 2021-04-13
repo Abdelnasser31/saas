@@ -11,4 +11,18 @@
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
     .container
+      %p.notice
+        = notice
+      %p.alert
+        = alert
+      
+      - if user_signed_in?
+        %p
+          = link_to('Edit Account', edit_user_registration_path)
+          = link_to('Logout', destroy_user_session_path, method: :delete) 
+          = current_user.email
+      - else
+        %p
+          = link_to('Sign in', new_user_session_path)
+          = link_to('Sign up', new_user_registration_path)
       = yield
